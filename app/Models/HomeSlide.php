@@ -9,6 +9,8 @@ class HomeSlide extends Model
 {
     use HasFactory;
 
+    protected $guard = [];
+
     protected $table ='home_slides';
 
     // protected $fillable = [

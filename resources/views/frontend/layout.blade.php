@@ -10,14 +10,20 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ url('frontend/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url('frontend/assets/img/pgts3c_logo_0.png') }}" rel="icon">
   <link href="{{ url('frontend/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <script src="{{ url('backend/assets/libs/jquery/jquery.min.js') }}"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <!-- Vendor CSS Files -->
   <link href="{{ url('frontend/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ url('frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
@@ -45,6 +51,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
+
   @yield('header-style-scripts')
 
 </head>
@@ -58,7 +65,7 @@
   <!-- End Header -->
 
   {{-- <section id="hero-animated" class="hero-animated d-flex align-items-center">
-    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+    <div class="container text-center d-flex flex-column justify-content-center align-items-center position-relative" data-aos="zoom-out">
       <img src="{{ url('frontend/assets/img/hero-carousel/hero-carousel-3.svg') }}" class="img-fluid animated">
       <h2>Welcome to <span>HeroBiz</span></h2>
       <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
@@ -90,6 +97,7 @@
 
   <div id="preloader"></div>
 
+
   <!-- Vendor JS Files -->
   <script src="{{ url('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url('frontend/assets/vendor/aos/aos.js') }}"></script>
@@ -102,6 +110,8 @@
   <script src="{{ url('frontend/assets/js/main.js') }}"></script>
 
   @livewireScripts
+
+  @yield('footer-style-scripts')
 
 </body>
 
